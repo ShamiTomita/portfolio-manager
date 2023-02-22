@@ -13,4 +13,9 @@ So Things To Keep In Mind:
 
 So Tasks: 
 1. implement smooth scrolling 
-2. learn custom
+2. learn custom screen displays 
+3. figure out how to add customization 
+4. implement rails models 
+5. hook up rails to the react frontend, is it harder doing it this way or easier?
+6. once most of this is built, I should then create an "admin" layer that allows for CRUD actions for the different sections.
+7. find a way to host this
