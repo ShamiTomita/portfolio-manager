@@ -2,7 +2,10 @@ import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import React from 'react';
 import { render } from "react-dom";
 import Clicker from "./Clicker";
-
+import About from "./About";
+import Awards from "./Awards";
+import Projects from "./Projects";
+import Contact from "./Contact";
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 //
@@ -23,7 +26,13 @@ export default function BasicExample() {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/awards">Awards</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 
@@ -38,6 +47,18 @@ export default function BasicExample() {
         */}
         <Routes>
           <Route exact path="/" element={<Clicker />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/about" element={<About />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/projects" element={<Projects />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/awards" element={<Awards />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </div>
   );
