@@ -3,9 +3,10 @@ import React from 'react';
 import { render } from "react-dom";
 import Clicker from "./Clicker";
 import About from "./About/About";
-import Awards from "./Awards";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Awards from "./Awards/Awards";
+import Projects from "./Projects/Projects";
+import Contact from "./Contact/Contact";
+import Navbar from "./Navbar/Navbar";
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 //
@@ -18,6 +19,7 @@ import Contact from "./Contact";
 export default function App() {
   return (
     <div>
+      <Navbar />
       <Clicker />
       <About />
       <Awards />
