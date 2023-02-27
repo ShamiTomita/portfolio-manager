@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from './images/logo.png'
 
 import './Navbar.css'
 
@@ -14,15 +13,16 @@ const Navbar = () => {
     return (
         <div className='header'>
             <nav className='navbar'>
-                <a href='/' className='logo'>
-                    <img src={logo} alt='logo' />
-                </a>
+              <a href="">LOGO</a>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
 
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className='nav-item'>
+                        <a href='#clicker' onClick={closeMenu}>Clicker</a>
+                    </li>
                     <li className='nav-item'>
                         <a href='/' onClick={closeMenu}>Home</a>
                     </li>

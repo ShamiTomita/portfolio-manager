@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import React from 'react';
 import { render } from "react-dom";
-import Clicker from "./Clicker";
+import Clicker from "./Clicker/Clicker";
+import Home from "./Home/Home";
 import About from "./About/About";
 import Awards from "./Awards/Awards";
 import Projects from "./Projects/Projects";
@@ -20,11 +21,14 @@ export default function App() {
   return (
     <div>
       <Navbar />
+      <div class="main">
       <Clicker />
+      <Home />
       <About />
       <Awards />
       <Projects />
       <Contact />
+      </div>
     </div>
   );
 }
