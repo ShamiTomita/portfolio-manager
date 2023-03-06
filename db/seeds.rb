@@ -7,10 +7,12 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 10.times do |i|
-    Project.create(
+    p = Project.create(
         title: "Project #{i + 1}",
         description: "I am a project! I show that you have relevant experience!",
-        images: [],
-        links: []
+    )
+    p.image.attach(
+      io:  File.open(File.join(Rails.root,'app/assets/images/dummy_project_images/dummy.jpg')),
+      filename: 'dummy.jpg'
     )
 end 
