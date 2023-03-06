@@ -1,4 +1,7 @@
 Notes
+
+REMEMBER: Your application needs to work right now just once; it must be easy to change forever.
+
 Notes for portfolio Manager. I would really like to get this done by the end of March. I think thats a good timeline. By the end of march I will have a working protoype that I can use for my own purposes.
 
 Now that I have the routes working I should be able to create 
