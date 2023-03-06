@@ -26,7 +26,7 @@ class ProjectController < ApplicationController
 
   private 
   def project_params
-    params.permit(:title, :description, :images, :links)
+    params.permit(:title, :description, :image, :links)
   end 
 
   def set_project 
