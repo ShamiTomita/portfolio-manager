@@ -22,9 +22,9 @@ const Projects = () => {
     <div key={index} className="col-md-6 col-lg-4">
       <div className="card mb-4">
         <img
-          src={project.image}
+          src={project.image_url}
           className="card-img-top"
-          alt={`${project.name} image`}
+          alt={`${project.title} image`}
         />
         <div className="card-body">
           <h5 className="card-title">{project.title}</h5>
