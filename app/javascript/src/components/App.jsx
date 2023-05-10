@@ -1,6 +1,4 @@
-import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import React from 'react';
-import { render } from "react-dom";
 import Clicker from "./Clicker/Clicker";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -18,10 +16,11 @@ import Navbar from "./Navbar/Navbar";
 // work properly.
 
 export default function App() {
+  console.log("App")
   return (
     <div>
       <Navbar />
-      <div class="main">
+      <div className="main">
       <Clicker />
       <Home />
       <About />

@@ -6,6 +6,10 @@ class ProjectController < ApplicationController
     render json: projects
   end
 
+  def new 
+    @project = Project.new
+  end 
+
   def create
     project = Project.create!(project_params)
     if project 
