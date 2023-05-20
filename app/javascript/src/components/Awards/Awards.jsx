@@ -2,7 +2,7 @@ import React from 'react'
 
 function Awards() {
   return (
-    <div>Awards</div>
+    <div id="awards">Awards</div>
   )
 }
 
