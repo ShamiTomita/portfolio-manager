@@ -4,7 +4,7 @@ import About from '../About/About.jsx'
 import Awards from '../Awards/Awards.jsx'
 import Projects from '../Projects/Projects.jsx'
 import Contact from '../Contact/Contact.jsx'
-
+import './Main.css'
 function Main() {
   return (
           <div className="main">
@@ -12,7 +12,6 @@ function Main() {
               <About />
               <Awards />
               <Projects />
-              <Contact />
           </div>
   )
 }
