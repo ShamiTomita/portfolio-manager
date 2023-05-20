@@ -11,8 +11,8 @@ nav {
 }
 
 nav span {
-	font-size: 18px;
-	border-bottom: 1px solid transparent;
+	font-size: 1em;
+	border-bottom: 0.10em solid transparent;
 	transition: border-bottom 0.2s ease;
 	transition-delay: 0.25s;
 	margin: 1em;

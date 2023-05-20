@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import './Projects.css'
 const Projects = () => {
   const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
@@ -55,46 +56,18 @@ const Projects = () => {
     e.preventDefault()
     console.log(newProject)
   }
-
-  return (
-    <div id="projects "className="projects">
-      <section className="jumbotron jumbotron-fluid text-center">
-        <div className="container py-5">
-          <h1 className="display-4">Projects</h1>
-          <p className="lead text-muted">
-            List of Projects I have been involed with
-          </p>
+    return (
+      <div className='projects' id='projects'>
+        <div className='container'>
+          <div className='col-2'>
+            <h2>Projects</h2>
+            <span className='line'></span>
+            <p>Projects!</p>
+            <button className='button'>Explore More</button>
+          </div>
         </div>
-      </section>
-      <div className="py-5">
-        <section className="container">
-          <div className="text-end mb-3">
-            <Link to="/project" className="btn custom-button">
-              Create New Project
-            </Link>
-          </div>
-          <form action="" onSubmit={handleSubmit}>
-            <h2>Add New Project</h2>
-            <label htmlFor="">Project Title</label>
-            <input type="text" value={newProject.title} onChange={(e) => setNewProject({title: e.target.value })}/>
-            <label htmlFor="">Project Description</label>
-            <input type="text" value={newProject.description} onChange={(e) => setNewProject({description: e.target.value })}/>
-            <label htmlFor="">Project Image URL</label>
-            <input type="text" value={newProject.image_url} onChange={(e) => setNewProject({image_url: e.target.value})}/>
-            <label htmlFor="">Project Link</label>
-            <input type="text" value={newProject.links} onChange={(e) => setNewProject({links: e.target.value})}/>
-            <button type="submit">Submit</button>
-          </form>
-          <div className="row">
-            {projects.length > 0 ? allProjects : noProject}
-          </div>
-          <Link to="/" className="btn btn-link">
-            Home
-          </Link>
-        </section>
       </div>
-    </div>
-  );
-};
+    )
+  }
 
 export default Projects;

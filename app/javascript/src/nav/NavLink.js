@@ -6,8 +6,9 @@ const NavLink = ({ navLinkId, scrollToId }) => {
 	const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);
 
 	const handleClick = () => {
+		console.log("nav")
 		setActiveNavLinkId(navLinkId);
-		document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth' });
+		document.getElementById(scrollToId).scrollIntoView({ block: "center", inline: "nearest", behavior: 'smooth' });
 	};
 
 	return (
