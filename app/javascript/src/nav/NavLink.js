@@ -8,7 +8,7 @@ const NavLink = ({ navLinkId, scrollToId }) => {
 	const handleClick = () => {
 		console.log("nav")
 		setActiveNavLinkId(navLinkId);
-		document.getElementById(scrollToId).scrollIntoView({ block: "center", inline: "nearest", behavior: 'smooth' });
+		document.getElementById(scrollToId).scrollIntoView({ block: "start", behavior: 'smooth' });
 	};
 
 	return (
