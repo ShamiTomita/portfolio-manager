@@ -1,6 +1,7 @@
-.main{
-    margin: 1em;
-    overflow-x: hidden;
-    padding-top: 2em;
-    padding-bottom: 2em;
+.main {
+    margin-left: 0em;
+    margin-right: 0em;
+
+    padding-top: 0em;
+    padding-bottom: 0em;
 }

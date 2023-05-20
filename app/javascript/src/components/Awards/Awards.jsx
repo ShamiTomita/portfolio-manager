@@ -1,8 +1,11 @@
 import React from 'react'
 import './Awards.css'
+import { useNav } from '../../custonHooks/useNav'
+
 function Awards() {
+  const awardsRef = useNav('Awards')
   return (
-      <div className='awards' id='awards'>
+      <div ref={awardsRef} className='awards' id='awards'>
         <div className='container'>
           <div className='col-2'>
             <h2>Awards</h2>

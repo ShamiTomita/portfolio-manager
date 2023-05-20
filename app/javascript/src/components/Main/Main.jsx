@@ -12,6 +12,7 @@ function Main() {
               <About />
               <Awards />
               <Projects />
+              <Contact/>
           </div>
   )
 }

@@ -1,9 +1,12 @@
 import React from 'react'
 import './About.css'
+import { useNav } from '../../custonHooks/useNav'
 
 const About = () => {
+  const aboutRef = useNav('About');
+
   return (
-    <div id='about'>
+    <div id='about' ref={aboutRef}>
     <div className='about' >
       <div className='container'>
         <div className='col-2'>

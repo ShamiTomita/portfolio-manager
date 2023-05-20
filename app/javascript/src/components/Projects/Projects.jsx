@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useNav } from '../../custonHooks/useNav'
 import './Projects.css'
 const Projects = () => {
   const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
+  const projectsRef = useNav('Projects')
 
   console.log("OK")
   useEffect(() => {
@@ -57,7 +59,7 @@ const Projects = () => {
     console.log(newProject)
   }
     return (
-      <div className='projects' id='projects'>
+      <div ref={projectsRef} className='projects' id='projects'>
         <div className='container'>
           <div className='col-2'>
             <h2>Projects</h2>
