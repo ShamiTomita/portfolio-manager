@@ -27,12 +27,11 @@ nav span:hover {
 }
 
 nav span:hover {
+	transition: color 0.1s ease;
+	transition-delay: 0.15s;
 	color: #E2EB6D;
 }
 
-nav span.activeClass{
-	color: #E2EB6D;
-}
 
 nav span.activeClass {
 	border-bottom-color: white;
