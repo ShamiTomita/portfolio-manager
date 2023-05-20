@@ -1,11 +1,8 @@
 import React from 'react';
-import Clicker from "./Clicker/Clicker";
-import Home from "./Home/Home";
-import About from "./About/About";
-import Awards from "./Awards/Awards";
-import Projects from "./Projects/Projects";
-import Contact from "./Contact/Contact";
-import Navbar from "./Navbar/Navbar";
+import Main from './components/Main/Main';
+import {Nav} from './nav'
+import NavProvider from './context/NavContext';
+import './App.css'
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 //
@@ -18,16 +15,11 @@ import Navbar from "./Navbar/Navbar";
 export default function App() {
   console.log("App")
   return (
-    <div>
-      <Navbar />
-      <div className="main">
-      <Clicker />
-      <Home />
-      <About />
-      <Awards />
-      <Projects />
-      <Contact />
-      </div>
+    <div className='appContainer'>
+      <NavProvider>
+        <Nav/>
+        <Main/>
+      </NavProvider>
     </div>
   );
 }

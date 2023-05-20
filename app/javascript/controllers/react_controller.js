@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus";
 import React from "react";
 import { createRoot } from "react-dom/client";
-import App from "../src/components/App";
+import App from "../src/App";
 import { BrowserRouter as Router } from "react-router-dom";
 import '../src/index.css'
 // Connects to data-controller="react"
