@@ -1,15 +1,9 @@
-/* .about {
-    background-color: #f8f8f8;
-    margin: auto;
+.about {
+    background-color: hsl(61, 50%, 75%);
+    margin-bottom: 4rem;
     padding: 8rem 1rem 0 1rem;
     width: 100%;
-}
-
-.about .container {
-    width: 1240px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    height: 50vh;
 }
 
 .about h2 {
@@ -22,7 +16,7 @@
     justify-content: center;
     align-items: center;
     padding: 3rem;
-} */
+} 
 
 .about .col-2 p:first-of-type {
     margin: 2rem 0;
