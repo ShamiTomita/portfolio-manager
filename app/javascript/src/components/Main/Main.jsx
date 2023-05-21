@@ -10,7 +10,7 @@ function Main() {
           <div className="main">
               <Home />
               <About />
-              <Awards />
+              {/* <Awards /> */}
               <Projects />
               <Contact/>
           </div>
