@@ -9,7 +9,7 @@ const Home = () => {
             <div className='container'>
                 <div className='header'>
                     <div className='title'>
-                        <h1>Shami Tomita </h1>
+                        <h1>Shami Tomita</h1>
                     </div>
                     <div className="sub-title">
                         <h4>Full Stack Developer</h4>  <h4>|</h4> <h4>Open Source Contributor</h4> <h4>|</h4> <h4>Rubyist</h4>
