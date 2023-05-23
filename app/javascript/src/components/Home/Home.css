@@ -5,9 +5,11 @@
     height: 90vh;
     flex-wrap: wrap;
     justify-content: center;
+    color:black;
 }
 .home h2 {
     font-size: 3rem;
+    text-shadow: .1rem .1rem beige;
 }
 .header{
     padding-top: 5%;
@@ -15,8 +17,16 @@
     padding-right: .5em;
     flex: 1 0 60%;
 }
+.title{
+    
+}
 .title h1{
     font-size: 6rem;
+    text-shadow: .3rem .3rem black;
+    
+}
+.title-h1{
+    
 }
 .sub-title{
     display: flex;
