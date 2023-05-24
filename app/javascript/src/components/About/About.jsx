@@ -12,7 +12,12 @@ const About = () => {
         <div className='col-2'>
           <h2>About</h2>
           <span className='line'></span>
-          <p>ABOUT</p>
+          <div>
+              <p>Lorem Ipsums</p>
+          </div>
+          <div>
+            
+          </div>
           <button className='button'>Explore More</button>
         </div>
       </div>
