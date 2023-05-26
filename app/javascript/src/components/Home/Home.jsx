@@ -9,7 +9,7 @@ const Home = () => {
     const skills = (
         <div className='change'>
             <div>
-                <h2>Skills</h2>
+                <h2 className='title-gradient'>Skills</h2>
             </div>
             <div className='categories'>
                 <div>
@@ -41,7 +41,7 @@ const Home = () => {
     const resume = (
         <div className='change'>
             <div>
-                <h2>Resume</h2>
+                <h2 className='title-gradient'>Resume</h2>
             </div>
             <div className='categories'>
                 <div>
@@ -73,7 +73,7 @@ const Home = () => {
     const media = ( 
         <div className='change'>
             <div>
-                <h2>Media</h2>
+                <h2 className='title-gradient'>Media</h2>
             </div>
             <div className='categories'>
                 <div>
@@ -119,7 +119,7 @@ const Home = () => {
             <div className='container'>
                 <div className='header'>
                     <div className='title'>
-                        <h1>Shami Tomita</h1>
+                        <h1 className='title-gradient'>Shami Tomita</h1>
                     </div>
                     <div className="sub-title">
                         <h4>Full Stack Developer</h4>  <h4>|</h4> <h4>Open Source Contributor</h4> <h4>|</h4> <h4>Rubyist</h4>
