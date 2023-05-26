@@ -104,12 +104,15 @@ const Home = () => {
     )
     const [selection, setSelection] = useState(skills)
 
-   /*  useEffect(() => {
-        setSelection(skills)
-    }, []) */
     const handleClick = (e) => {
         e.preventDefault()
-        console.log(e.target.value)
+        if (e.target.value === "skills"){
+            setSelection(skills)
+        }else if (e.target.value === "resume"){
+            setSelection(resume)
+        }else if (e.target.value === "media"){
+            setSelection(media)
+        }
     }
     return (
         <div ref={homeRef} className='home' id='home'>
@@ -126,9 +129,9 @@ const Home = () => {
                     </div>
                     <br />
                     <div className='links'>
-                        <div><h3 value="skills" onClick={e => handleClick(e)}>Skills</h3></div>
-                        <div><h3 value="resume" onClick={e => handleClick(e)}>Resume</h3></div>
-                        <div><h3 value="media" onClick={e => handleClick(e)}>Media</h3></div>
+                        <div><button value="skills" onClick={(e) => handleClick(e)}>Skills</button></div>
+                        <div><button value="resume" onClick={(e) => handleClick(e)}>Resume</button></div>
+                        <div><button value="media" onClick={(e) => handleClick(e)}>Media</button></div>
                     </div>
                 </div>
                     <Selection props={selection}/>
