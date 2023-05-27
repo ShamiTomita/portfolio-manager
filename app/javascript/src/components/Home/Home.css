@@ -2,21 +2,25 @@
 .home{
     display: flex;
     width:100%;
-    height: 90vh;
+   
     flex-wrap: wrap;
-    justify-content: center;
+    overflow-y: scroll;
 }
 .header{
     padding-top: 5%;
     padding-left: 1em;
     padding-right: .5em;
-    flex: 1 0 60%;
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .title{
     
 }
 .title h1{
-    font-size: 6.5rem;
+    font-size: 8rem;
     /*text-shadow: .3rem .3rem #502274;*/
 }
 .title-gradient{
@@ -53,11 +57,31 @@
     display: flex;
     padding-bottom: 1em;
     font-style: italic;
+    font-size: 1.4em;
 }
 .sub-title h4{
     margin-right: 1em;
+    background-image: linear-gradient(45deg,white);
+    -webkit-text-stroke-width: .04em;
+    -webkit-text-stroke-color: beige;
+    background-size: 100% 100%;
+    animation: title-gradient 10s ease infinite;
+    background-clip: text;
+    font-style: oblique;
+    -webkit-background-clip: text;
+    text-fill-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    filter: drop-shadow(.03em .03em rgb(181, 181, 168));
 }
 
+.blurb{
+    width: 80%;
+    padding: 1em;
+    border-radius: 1em;
+    background: #29c5F6;
+    background-clip: padding-box;
+}
 
 
 .selection{
@@ -65,20 +89,22 @@
     height: 100%;
     display: flex;
     padding-top: 2em;
+    flex-wrap: wrap;
 }
 
 .change{
-    flex: 1 1 40%;
-    min-width: 40%;
+    flex: 1 0 40%;
     border-left: 1em;
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .change h2{
-    font-size: 3em;
+    font-size: 4em;
     font-style: normal;
 }
 
@@ -101,6 +127,8 @@ font-size: 1.5em;
 margin-bottom: .5em;
 text-decoration: underline;
 text-align: left;
+-webkit-text-stroke-width: .04em;
+-webkit-text-stroke-color: #dd8cef;
 }
 .change li{
     display: inline;
@@ -117,6 +145,7 @@ text-align: left;
 .space{
     margin-right: 1em;
 }
+
 button {
     appearance: button;
     background-image:linear-gradient(45deg, #ead051, #f1bba7, #dd8cef, #ead051);
@@ -134,7 +163,6 @@ button {
     font-weight: 700;
     letter-spacing: .8px;
     line-height: 20px;
-    margin-right: 1em;
     outline: none;
     overflow: visible;
     padding: 13px 16px;
@@ -155,7 +183,7 @@ button:after {
     background-color: #28b6e1;
     border: solid transparent;
     border-radius: 16px;
-    border-width: 0 0 4px;
+    border-width: 1px 3px 4px;
     bottom: -4px;
     content: "";
     left: 0;
@@ -175,6 +203,10 @@ button:hover:not(:disabled) {
     -webkit-filter: brightness(1.1);
 }
 
+button:active{
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
 button:disabled {
     cursor: auto;
 }
