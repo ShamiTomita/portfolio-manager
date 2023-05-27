@@ -131,6 +131,16 @@ const Home = () => {
                         <div className='space'><button value="skills" onClick={(e) => handleClick(e)}>Skills</button></div>
                         <div className='space'><button value="resume" onClick={(e) => handleClick(e)}>Resume</button></div>
                         <div className='space'><button value="media" onClick={(e) => handleClick(e)}>Media</button></div>
+                        <div className='space'>
+                            <a href="https://www.linkedin.com/in/shami-tomita-rodriguez/" target="_blank" rel="noopener noreferrer">
+                            <button><i class="fa-brands fa-linkedin fa-xl"></i></button>
+                            </a>
+                        </div>
+                        <div className='space'>
+                            <a href="https://github.com/ShamiTomita" target="_blank" rel="noopener noreferrer">
+                            <button><i class="fa-brands fa-github fa-xl"></i></button>
+                            </a>
+                        </div>
                     </div>
                 </div>
                     <Selection props={selection}/>
