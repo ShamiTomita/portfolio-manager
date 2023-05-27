@@ -20,18 +20,18 @@
     /*text-shadow: .3rem .3rem #502274;*/
 }
 .title-gradient{
-        background-image: linear-gradient(45deg, #ead051,#f1bba7, #dd8cef);
-        -webkit-text-stroke-width: .05em;
+        background-image: linear-gradient(45deg, #ead051,#f1bba7, #dd8cef,#ead051);
+        -webkit-text-stroke-width: .03em;
         -webkit-text-stroke-color: beige;
-        background-size: 100% 100%;
-        animation: title-gradient 15s ease infinite;
+        background-size: 300% 300%;
+        animation: title-gradient 10s ease infinite;
         background-clip: text;
         font-style: oblique;
         -webkit-background-clip: text;
         text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        filter: drop-shadow(.04em .04em rgb(181, 181, 168));
+        filter: drop-shadow(.03em .03em rgb(181, 181, 168));
 }
 
 @keyframes title-gradient {
@@ -61,12 +61,10 @@
 
 
 .selection{
-    width: 40%;
+    width: 35%;
     height: 100%;
     display: flex;
-    align-self: baseline;
-    text-align: center;
-    padding-right: 1em;
+    padding-top: 2em;
 }
 
 .change{
@@ -74,6 +72,9 @@
     min-width: 40%;
     border-left: 1em;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .change h2{
@@ -88,22 +89,92 @@
     padding-right: 1rem;
 }
 
-.categories ul{
-    margin-left: 2em;
-}
+
 
 .categories-resume{
-
+align-items: center;
+justify-content: center;
 }
 .categories-resume h3{
 font-style: italic;
-margin-top: .5em;
+font-size: 1.5em;
 margin-bottom: .5em;
 text-decoration: underline;
+text-align: left;
 }
 .change li{
-    list-style-type: none;
+    display: inline;
+    padding-right: .5em;
+}
+.change ul{
+    text-align: left;
 }
 .links{
     display: flex;
+}
+
+/* CSS */
+.space{
+    margin-right: 1em;
+}
+button {
+    appearance: button;
+    background-image:linear-gradient(45deg, #ead051, #f1bba7, #dd8cef, #ead051);
+    background-size: 300% 300%;
+    animation: title-gradient 10s ease infinite;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin-right: 1em;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+button:after {
+    background-clip: padding-box;
+    background-color: #28b6e1;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+button:main,
+button:focus {
+    user-select: auto;
+}
+
+button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+button:disabled {
+    cursor: auto;
 }

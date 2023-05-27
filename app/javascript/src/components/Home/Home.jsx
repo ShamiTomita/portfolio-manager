@@ -128,9 +128,9 @@ const Home = () => {
                     </div>
                     <br />
                     <div className='links'>
-                        <div><button value="skills" onClick={(e) => handleClick(e)}>Skills</button></div>
-                        <div><button value="resume" onClick={(e) => handleClick(e)}>Resume</button></div>
-                        <div><button value="media" onClick={(e) => handleClick(e)}>Media</button></div>
+                        <div className='space'><button value="skills" onClick={(e) => handleClick(e)}>Skills</button></div>
+                        <div className='space'><button value="resume" onClick={(e) => handleClick(e)}>Resume</button></div>
+                        <div className='space'><button value="media" onClick={(e) => handleClick(e)}>Media</button></div>
                     </div>
                 </div>
                     <Selection props={selection}/>
