@@ -11,9 +11,9 @@ const Home = () => {
             <div>
                 <h2 className='title-gradient'>Skills</h2>
             </div>
-            <div className='categories'>
+            <div className='categories-resume'>
                 <div>
-                    <h4>Langauges</h4>
+                    <h3>Langauges</h3>
                     <ul>
                         <li>Ruby</li>
                         <li>JavaScript</li>
@@ -22,14 +22,14 @@ const Home = () => {
                     </ul>
                 </div>
                 <div>
-                    <h4>Frameworks</h4>
+                    <h3>Frameworks</h3>
                     <ul>
                         <li>Ruby On Rails</li>
                         <li>React</li>
                     </ul>
                 </div>
                 <div>
-                    <h4>Databases</h4>
+                    <h3>Databases</h3>
                     <ul>
                         <li>MySQL</li>
                         <li>PostgreSQL</li>
@@ -43,28 +43,38 @@ const Home = () => {
             <div>
                 <h2 className='title-gradient'>Resume</h2>
             </div>
-            <div className='categories'>
+            <div className='categories-resume'>
                 <div>
-                    <h4>Langauges</h4>
+                    <h3>Work Experince</h3>
                     <ul>
-                        <li>Ruby</li>
-                        <li>JavaScript</li>
-                        <li>HTML&CSS</li>
-                        <li>RSpec</li>
+                        <li>
+                            Ruby For Good - Open Source Contributor
+                        </li>
+                        <li>
+                            Agency of Learning - Apprentice Developer
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h4>Frameworks</h4>
+                    <h3>Education</h3>
                     <ul>
-                        <li>Ruby On Rails</li>
-                        <li>React</li>
+                        <li>
+                            Flaitor School
+                        </li>
+                        <li>
+                            NYU
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h4>Databases</h4>
+                    <h3>Projects</h3>
                     <ul>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
+                        <li>
+                            CASA
+                        </li>
+                        <li>
+                            Full List:
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -75,29 +85,18 @@ const Home = () => {
             <div>
                 <h2 className='title-gradient'>Media</h2>
             </div>
-            <div className='categories'>
+            <div className='categories-resume'>
                 <div>
-                    <h4>Langauges</h4>
+                </div>
+                <div>
+                    <h3>Blog Posts</h3>
                     <ul>
-                        <li>Ruby</li>
-                        <li>JavaScript</li>
-                        <li>HTML&CSS</li>
-                        <li>RSpec</li>
+                       <li>Link 1</li>
+                       <li>Link 2</li>
+                       <li>Link 3</li>
                     </ul>
                 </div>
                 <div>
-                    <h4>Frameworks</h4>
-                    <ul>
-                        <li>Ruby On Rails</li>
-                        <li>React</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Databases</h4>
-                    <ul>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                    </ul>
                 </div>
             </div>
         </div>
