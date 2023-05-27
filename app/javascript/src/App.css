@@ -7,7 +7,8 @@
 }
 
 .container{
-    background: linear-gradient(-45deg, #d6be49, #e3b09d, #d184e2);
+    /*background: linear-gradient(-45deg, #d6be49, #e3b09d, #d184e2);*/
+    background: linear-gradient(-45deg, white, #29c5F6, #349bdc, #1260CC);
     background-size: 300% 300%;
     animation: gradient 15s ease infinite;
     margin-bottom: 0rem;
