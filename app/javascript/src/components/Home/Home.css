@@ -59,12 +59,26 @@
 .sub-title h4{
     margin-right: 1em;
 }
-.change{
-    flex: 1 0 40%;
-    border-left: 1em;
-    align-self: center;
+
+
+
+.selection{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-self: baseline;
     text-align: center;
-    height: 40%;
+    padding-right: 1em;
+}
+.selection h2 {
+    text-align: center;
+}
+
+.change{
+    flex: 1 1 40%;
+    min-width: 40%;
+    border-left: 1em;
+    height: 100%;
 }
 
 .change h2 {
@@ -73,10 +87,25 @@
 .categories{
     flex: 1 0 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-right: 1rem;
 }
+
 .categories ul{
     margin-left: 2em;
+}
+
+.categories-resume{
+
+}
+.categories-resume h3{
+font-style: italic;
+margin-top: .5em;
+margin-bottom: .5em;
+text-decoration: underline;
+}
+.change li{
+    list-style-type: none;
 }
 .links{
     display: flex;
