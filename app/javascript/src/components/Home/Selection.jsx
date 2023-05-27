@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './Home.css'
 const Selection = ({props}) => {
   return (
-    <div>
+    <div className='selection'>
         {props}
     </div>
   )
