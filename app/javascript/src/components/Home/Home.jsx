@@ -15,23 +15,23 @@ const Home = () => {
                 <div>
                     <h3>Langauges</h3>
                     <ul>
-                        <li>Ruby</li>
-                        <li>JavaScript</li>
+                        <li>Ruby<span aria-hidden="true"> · </span></li>
+                        <li>JavaScript<span aria-hidden="true"> · </span></li>
                         <li>HTML&CSS</li>
-                        <li>RSpec</li>
+                        
                     </ul>
                 </div>
                 <div>
                     <h3>Frameworks</h3>
                     <ul>
-                        <li>Ruby On Rails</li>
+                        <li>Ruby On Rails<span aria-hidden="true"> · </span></li>
                         <li>React</li>
                     </ul>
                 </div>
                 <div>
                     <h3>Databases</h3>
                     <ul>
-                        <li>MySQL</li>
+                        <li>MySQL<span aria-hidden="true"> · </span></li>
                         <li>PostgreSQL</li>
                     </ul>
                 </div>
