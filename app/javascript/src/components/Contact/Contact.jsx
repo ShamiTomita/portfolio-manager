@@ -12,6 +12,20 @@ const Contact = () => {
           <span className='line'></span>
           <p>Contact!</p>
           <button className='button'>Explore More</button>
+          <form action="">
+            <div>
+              <label htmlFor="">Name</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label htmlFor="">Email</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label htmlFor="">Message</label>
+              <input type="text" />
+            </div>
+          </form>
         </div>
       </div>
     </div>
